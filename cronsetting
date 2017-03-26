@@ -1,0 +1,30 @@
+// システム設定コマンド
+cron
+
+// 設定の確認
+crontab -l
+// 設定の編集
+crontab -e
+
+min hour day month youbi(0-7) command
+
+// 毎日7時
+0 7 * * * command
+
+$ which php
+/usr/bin/php
+
+$ pwd
+/home/vagrant/developments/bot_php/bot.php
+
+// 自動でプログラムを実行することを命令
+0 15 * * * /usr/bin/php /home/vagrant/developments/bot_php
+
+$ crontab -e
+// viで編集
+15 15 * * * /usr/bin/php /home/vagrant/developments/bot_php
+
+// うまく行かなかった...
+
+// 設定の消去
+$ crontab -r
